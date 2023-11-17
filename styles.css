@@ -1,9 +1,31 @@
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+}
+
+.box-body {
+    height: 120vh;
+    transition: all .3s linear;
+    width: 100%; 
+    position: relative;
+    overflow: hidden;
+}
+
+.box-body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .7;
+    background: url('BlueDreadz-Background.jpg') no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 header {
@@ -11,6 +33,10 @@ header {
     color: #fff;
     text-align: center;
     padding: 1rem;
+}
+
+nav {
+    padding: 20px 0;
 }
 
 nav ul {
@@ -30,26 +56,21 @@ nav a {
     font-weight: bold;
 }
 
-#services {
-    padding: 20px;
+.logo-brand {
+    width: 150px; /* Adjust the size as needed */
 }
 
-#contact {
-    background-color: #27ae60; /* Green shade */
-    color: #fff;
-    padding: 20px;
-}
-
-#contact a {
-    color: #ffcc00; /* Gold shade */
-}
-
-footer {
-    background-color: #3498db; /* Blue shade */
-    color: #fff;
+.taps-links {
     text-align: center;
-    padding: 1rem;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+}
+
+.taps-links li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.taps-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
 }
